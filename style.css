@@ -46,7 +46,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(245, 241, 234, 0.9);
+  background: rgba(245, 241, 234, 0.88);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(230, 223, 212, 0.8);
 }
@@ -117,7 +117,7 @@ a {
 
 .hero-card {
   width: min(520px, 100%);
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.88);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255,255,255,0.6);
   border-radius: 22px;
@@ -139,8 +139,7 @@ a {
 .intro h2,
 .who-section h2,
 .section-top h2,
-.apply-box h2,
-.contact-box h2 {
+.apply-box h2 {
   margin: 0;
   line-height: 0.96;
   letter-spacing: -0.04em;
@@ -202,25 +201,18 @@ a {
 .intro h2,
 .who-section h2,
 .section-top h2,
-.apply-box h2,
-.contact-box h2 {
+.apply-box h2 {
   font-size: clamp(2rem, 4vw, 3.25rem);
 }
 
-.intro-text,
-.apply-copy,
-.contact-box p {
+.intro-text {
   color: var(--muted);
   line-height: 1.8;
   font-size: 1rem;
-  max-width: 560px;
+  max-width: 520px;
 }
 
-.section-top {
-  margin-bottom: 24px;
-}
-
-.experience-grid-main {
+.experience-grid {
   display: grid;
   grid-template-columns: 1.45fr 0.95fr;
   gap: 22px;
@@ -228,9 +220,8 @@ a {
 
 .feature-large,
 .feature-small,
-.info-card,
-.apply-box,
-.contact-box {
+.schedule-card,
+.apply-box {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -302,41 +293,77 @@ a {
   transform: rotate(-7deg);
 }
 
-.info-grid {
+.section-top {
+  margin-bottom: 24px;
+}
+
+.schedule-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 18px;
 }
 
-.info-card {
-  padding: 22px;
+.schedule-card,
+.schedule-image {
+  min-height: 220px;
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
-.info-card h3 {
-  margin: 0 0 14px;
-  font-size: 1.2rem;
+.schedule-card {
+  padding: 24px;
 }
 
-.info-card ul {
+.schedule-card.large {
+  grid-row: span 2;
+}
+
+.schedule-card.dark {
+  background: var(--dark-2);
+  color: #fff;
+  border: none;
+}
+
+.schedule-card.light {
+  background: var(--surface-soft);
+}
+
+.schedule-card h3 {
+  margin: 12px 0 10px;
+  font-size: 1.28rem;
+}
+
+.schedule-card p {
   margin: 0;
-  padding-left: 18px;
-  display: grid;
-  gap: 8px;
+  line-height: 1.7;
+  color: var(--muted);
 }
 
-.info-card li {
-  font-size: 0.95rem;
-  color: var(--muted);
-  line-height: 1.6;
+.schedule-card.dark p {
+  color: rgba(255,255,255,0.84);
+}
+
+.number {
+  font-size: 0.82rem;
+  color: #8a867f;
+}
+
+.schedule-card.dark .number {
+  color: rgba(255,255,255,0.68);
+}
+
+.schedule-image img {
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
 }
 
 .apply-section {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 90px;
 }
 
-.apply-box,
-.contact-box {
+.apply-box {
   text-align: center;
   padding: 44px 24px;
   box-shadow: var(--shadow);
@@ -346,16 +373,6 @@ a {
 
 .apply-box .btn {
   margin-top: 20px;
-}
-
-.contact-section {
-  padding-top: 20px;
-  padding-bottom: 90px;
-}
-
-.contact-box a {
-  color: var(--dark);
-  font-weight: 600;
 }
 
 @media (max-width: 980px) {
@@ -369,8 +386,8 @@ a {
 
   .intro-grid,
   .who-grid,
-  .experience-grid-main,
-  .info-grid {
+  .experience-grid,
+  .schedule-grid {
     grid-template-columns: 1fr;
   }
 
