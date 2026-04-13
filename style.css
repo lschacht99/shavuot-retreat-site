@@ -1,58 +1,477 @@
+:root {
+  --bg: #f4f1eb;
+  --surface: #ffffff;
+  --text: #1e1f1c;
+  --muted: #6e7068;
+  --green: #1f3d2f;
+  --green-soft: #314f3f;
+  --border: #e6e1d8;
+  --shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+  --radius: 18px;
+  --container: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f6f3ee;
-  color: #1f1f1f;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(var(--container), calc(100% - 40px));
+  margin: 0 auto;
 }
 
 .hero {
-  min-height: 80vh;
-  background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  min-height: 92vh;
+  background: url("images/hero.jpg") center center / cover no-repeat;
 }
 
-.overlay {
-  min-height: 80vh;
-  background: rgba(0,0,0,0.4);
-  color: white;
-  padding: 20px;
+.hero-overlay {
+  min-height: 92vh;
+  background:
+    linear-gradient(to right, rgba(15, 19, 16, 0.64), rgba(15, 19, 16, 0.18)),
+    linear-gradient(to top, rgba(0,0,0,0.28), rgba(0,0,0,0.08));
 }
 
-nav {
+.topbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  color: #fff;
+}
+
+.brand {
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  font-size: 0.92rem;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.88);
+}
+
+.nav-button {
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.22);
 }
 
 .hero-content {
-  max-width: 600px;
-  margin-top: 100px;
+  max-width: 620px;
+  color: #fff;
+  padding: 90px 0 120px;
 }
 
-h1 {
-  font-size: 50px;
+.eyebrow,
+.section-label,
+.mini-label {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.82);
 }
 
-.section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
+.section-label,
+.mini-label {
+  color: #77766d;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  line-height: 0.95;
+  margin: 14px 0 18px;
+  letter-spacing: -0.04em;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
+.hero-text {
+  font-size: 1.07rem;
+  line-height: 1.7;
+  max-width: 540px;
+  color: rgba(255,255,255,0.9);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
 }
 
 .button {
-  background: #264d36;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 20px;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.button.primary {
+  background: #fff;
+  color: #17261d;
+}
+
+.button.secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.28);
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+}
+
+.intro h2,
+.who-section h2,
+.itinerary-section h2,
+.logistics-section h2,
+.apply-section h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  margin: 10px 0 0;
+}
+
+.intro p:last-child,
+.logistics-section p,
+.apply-section p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.feature-card,
+.schedule-card,
+.mini-feature,
+.logistics-box,
+.apply-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.feature-image-card {
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.feature-image-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.image-caption {
+  padding: 22px;
+}
+
+.image-caption h3 {
+  margin: 8px 0 8px;
+  font-size: 1.45rem;
+}
+
+.image-caption p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.side-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.mini-feature {
+  padding: 22px;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 14px;
+}
+
+.icon {
+  color: var(--green);
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+.mini-feature h4 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.mini-feature p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.who-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.clean-list {
+  padding: 0;
+  margin: 28px 0 0;
+  list-style: none;
+}
+
+.clean-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.tilted-card-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.tilted-card {
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 22px 40px rgba(0,0,0,0.18);
+  transform: rotate(-8deg);
+}
+
+.itinerary-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.itinerary-note {
+  color: var(--muted);
+  max-width: 360px;
+  line-height: 1.7;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 20px;
+}
+
+.schedule-card {
+  padding: 24px;
+  min-height: 220px;
+}
+
+.schedule-card.large {
+  grid-row: span 2;
+}
+
+.schedule-card.green {
+  background: var(--green);
+  color: #fff;
+  border-color: transparent;
+}
+
+.schedule-card.green p {
+  color: rgba(255,255,255,0.86);
+}
+
+.schedule-card.light {
+  background: #efece5;
+}
+
+.schedule-card.image-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.schedule-card.image-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+
+.schedule-number {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #8c8f86;
+  margin-bottom: 20px;
+}
+
+.schedule-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+}
+
+.schedule-card p,
+.schedule-card li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.schedule-card.green .schedule-number {
+  color: rgba(255,255,255,0.72);
+}
+
+.schedule-card.green h3 {
+  color: #fff;
+}
+
+.schedule-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.logistics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.logistics-boxes {
+  display: grid;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.logistics-box {
+  padding: 16px 18px;
+  color: var(--muted);
+}
+
+.logistics-photo {
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.logistics-photo img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.apply-box {
+  text-align: center;
+  padding: 52px 28px;
+  max-width: 820px;
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+}
+
+.apply-box p {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.apply-box .button {
+  margin-top: 10px;
+  background: var(--green);
+  color: #fff;
+}
+
+@media (max-width: 980px) {
+  .two-col,
+  .experience-grid,
+  .who-grid,
+  .logistics-grid,
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .itinerary-header,
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .tilted-card {
+    transform: rotate(-5deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(var(--container), calc(100% - 24px));
+  }
+
+  .hero-content {
+    padding: 56px 0 84px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .feature-image-card img,
+  .logistics-photo img {
+    height: 260px;
+  }
+
+  .tilted-card {
+    width: 240px;
+  }
 }
