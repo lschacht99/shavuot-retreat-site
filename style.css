@@ -465,3 +465,13 @@ a {
   color: var(--dark);
   font-weight: 600;
 }
+.feature-image-small {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.feature-image-small img {
+  height: 180px;
+  object-fit: cover;
+}
