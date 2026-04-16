@@ -475,3 +475,13 @@ a {
   height: 180px;
   object-fit: cover;
 }
+.contact-social {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.contact-social a {
+  text-decoration: none;
+  font-weight: 500;
+}
