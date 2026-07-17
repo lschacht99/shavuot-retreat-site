@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="5.5in" height="3in" viewBox="0 0 1650 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hamsa Nomads mobile app concept mockup</title>
+  <desc id="desc">Four cohesive mobile screens: welcome, home, Renaissance Faire Shabbos, and kosher city guide.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#111111" flood-opacity="0.15"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="welcomeGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F9F2E7"/>
+      <stop offset="0.6" stop-color="#ECE7D8"/>
+      <stop offset="1" stop-color="#DCC7A1"/>
+    </linearGradient>
+    <linearGradient id="tripSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A82B0"/>
+      <stop offset="1" stop-color="#D7E2DE"/>
+    </linearGradient>
+    <linearGradient id="faireSky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DCC7A1"/>
+      <stop offset="0.58" stop-color="#C88B6A"/>
+      <stop offset="1" stop-color="#7F8A6A"/>
+    </linearGradient>
+    <linearGradient id="mapWash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DDE5DC"/>
+      <stop offset="1" stop-color="#F3E5D8"/>
+    </linearGradient>
+    <clipPath id="screen1"><rect x="70" y="48" width="352" height="804" rx="54"/></clipPath>
+    <clipPath id="screen2"><rect x="456" y="48" width="352" height="804" rx="54"/></clipPath>
+    <clipPath id="screen3"><rect x="842" y="48" width="352" height="804" rx="54"/></clipPath>
+    <clipPath id="screen4"><rect x="1228" y="48" width="352" height="804" rx="54"/></clipPath>
+    <style>
+      .serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}
+      .ink{fill:#111111}.green{fill:#24483B}.cream{fill:#F9F2E7}.ivory{fill:#ECE7D8}.sand{fill:#DCC7A1}.clay{fill:#C88B6A}.olive{fill:#7F8A6A}.blue{fill:#1D4F8C}.white{fill:#FFFFFF}
+      .micro{font-size:13px;letter-spacing:1.6px;font-weight:700}.small{font-size:16px}.body{font-size:18px}.label{font-size:14px;font-weight:700;letter-spacing:1.2px}.h1{font-size:43px;font-weight:700;line-height:1.05}.h2{font-size:31px;font-weight:700}.h3{font-size:22px;font-weight:700}.muted{fill:#5F665F}.line{fill:none;stroke:#111111;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#111111;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <rect width="1650" height="900" fill="#F3EEE5"/>
+
+  <!-- Screen 1: Welcome -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="48" width="352" height="804" rx="54" fill="#F9F2E7" stroke="#111111" stroke-width="3"/>
+  </g>
+  <g clip-path="url(#screen1)">
+    <rect x="70" y="48" width="352" height="804" fill="url(#welcomeGlow)"/>
+    <path d="M69 188 C155 130 236 155 304 112 C357 78 397 70 443 88 L443 49 L69 49Z" fill="#1D4F8C" opacity="0.96"/>
+    <path d="M70 670 C146 626 211 646 275 612 C338 578 390 590 438 552 L438 861 L70 861Z" fill="#7F8A6A" opacity="0.92"/>
+    <path d="M92 632 C162 590 203 612 265 582 C326 553 365 551 417 516" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+    <path d="M102 612 C170 570 208 592 266 567 C326 540 367 536 413 504" fill="none" stroke="#F9F2E7" stroke-width="2" stroke-dasharray="6 9" stroke-linecap="round"/>
+
+    <rect x="180" y="68" width="132" height="28" rx="14" fill="#111111"/>
+    <circle cx="91" cy="81" r="5" fill="#111111"/>
+    <text x="102" y="86" class="sans micro ink">9:41</text>
+
+    <g transform="translate(140 194)">
+      <path d="M68 142 C52 130 45 113 45 95 L45 55 C45 44 53 36 64 36 C74 36 81 43 82 54 L83 16 C83 6 91 -2 101 -2 C111 -2 119 6 119 16 L119 48 L120 2 C120 -8 128 -16 138 -16 C149 -16 157 -8 157 2 L157 51 L159 18 C160 8 168 1 178 1 C189 2 196 10 195 21 L192 75 L211 58 C220 50 233 51 241 60 C249 69 247 82 238 90 L204 121 C193 131 188 144 188 159 L188 175 L81 175 L81 164 C81 154 76 147 68 142Z" fill="none" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M90 102 C119 83 151 82 176 96 C190 104 205 105 219 99" class="thin"/>
+      <path d="M103 116 C128 101 151 102 173 114 C188 122 202 123 216 118" class="thin"/>
+      <path d="M130 112 C122 124 118 139 120 153 C123 167 133 177 148 181" class="thin"/>
+      <circle cx="137" cy="90" r="11" fill="none" stroke="#111111" stroke-width="3"/>
+      <circle cx="137" cy="90" r="3" fill="#111111"/>
+    </g>
+
+    <text x="98" y="392" class="serif ink" font-size="36" font-weight="700">Find your</text>
+    <text x="98" y="433" class="serif ink" font-size="36" font-weight="700">people, wherever</text>
+    <text x="98" y="474" class="serif ink" font-size="36" font-weight="700">you go.</text>
+    <text x="98" y="514" class="sans small muted">Jewish travel, Shabbat weekends,</text>
+    <text x="98" y="538" class="sans small muted">and city connections in one place.</text>
+
+    <rect x="98" y="590" width="296" height="60" rx="30" fill="#111111"/>
+    <text x="246" y="628" text-anchor="middle" class="sans body white" font-weight="700">Join the network</text>
+    <rect x="98" y="666" width="296" height="58" rx="29" fill="none" stroke="#111111" stroke-width="2.5"/>
+    <text x="246" y="703" text-anchor="middle" class="sans body ink" font-weight="700">Explore as a guest</text>
+    <text x="246" y="790" text-anchor="middle" class="sans micro ink">HAMSA NOMADS</text>
+  </g>
+
+  <!-- Screen 2: Home -->
+  <g filter="url(#shadow)">
+    <rect x="456" y="48" width="352" height="804" rx="54" fill="#F9F2E7" stroke="#111111" stroke-width="3"/>
+  </g>
+  <g clip-path="url(#screen2)">
+    <rect x="456" y="48" width="352" height="804" fill="#F9F2E7"/>
+    <rect x="566" y="68" width="132" height="28" rx="14" fill="#111111"/>
+    <text x="480" y="86" class="sans micro ink">9:41</text>
+
+    <g transform="translate(478 118)">
+      <path d="M9 25 C2 19 0 12 2 5 C4 -2 11 -7 17 -3 C21 -1 23 3 23 8 C23 2 27 -2 33 -2 C39 -2 43 3 42 9 C44 3 50 0 55 2 C61 5 62 12 58 17 L47 30 C42 36 40 43 40 50 L17 50 C17 40 14 32 9 25Z" fill="none" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 29 C23 21 34 21 45 27" fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <text x="542" y="141" class="serif h3 ink">Hamsa Nomads</text>
+    <circle cx="768" cy="133" r="22" fill="#DCC7A1" stroke="#111111" stroke-width="2"/>
+    <text x="768" y="140" text-anchor="middle" class="sans body ink" font-weight="700">L</text>
+
+    <text x="480" y="201" class="sans label green">GOOD MORNING</text>
+    <text x="480" y="236" class="serif ink" font-size="25" font-weight="700">Where are you headed?</text>
+
+    <rect x="480" y="268" width="304" height="58" rx="29" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+    <circle cx="508" cy="297" r="10" fill="none" stroke="#111111" stroke-width="2.5"/>
+    <path d="M516 305 L525 314" class="thin"/>
+    <text x="542" y="304" class="sans small muted">Search a city or experience</text>
+
+    <text x="480" y="374" class="sans label ink">COMING NEXT</text>
+    <g filter="url(#softShadow)">
+      <rect x="480" y="392" width="304" height="226" rx="28" fill="#FFFFFF"/>
+    </g>
+    <rect x="480" y="392" width="304" height="112" rx="28" fill="url(#tripSky)"/>
+    <path d="M480 484 L535 445 L574 468 L618 419 L664 459 L714 428 L784 477 L784 504 L480 504Z" fill="#24483B"/>
+    <path d="M480 492 L548 459 L584 478 L625 444 L671 479 L716 451 L784 491" fill="none" stroke="#F9F2E7" stroke-width="3" stroke-linecap="round"/>
+    <rect x="500" y="412" width="117" height="28" rx="14" fill="#F9F2E7"/>
+    <text x="558" y="431" text-anchor="middle" class="sans micro ink">AUG 14–16</text>
+    <text x="504" y="540" class="serif h3 ink">Renaissance Faire</text>
+    <text x="504" y="568" class="serif h3 ink">Shabbos</text>
+    <text x="504" y="594" class="sans small muted">Pennsylvania · Indoor + camping</text>
+    <circle cx="746" cy="559" r="22" fill="#111111"/>
+    <path d="M737 559 H754 M748 553 L754 559 L748 565" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text x="480" y="663" class="sans label ink">EXPLORE THE NETWORK</text>
+    <g>
+      <rect x="480" y="682" width="92" height="78" rx="22" fill="#ECE7D8" stroke="#111111" stroke-width="2"/>
+      <path d="M505 713 C511 704 522 704 528 713 C534 704 545 704 551 713" class="thin"/>
+      <text x="526" y="744" text-anchor="middle" class="sans small ink" font-weight="700">Trips</text>
+      <rect x="586" y="682" width="92" height="78" rx="22" fill="#DCC7A1" stroke="#111111" stroke-width="2"/>
+      <path d="M612 707 C617 699 628 699 633 707 C638 715 633 726 623 734 C613 726 607 715 612 707Z" fill="none" stroke="#111111" stroke-width="2.5"/>
+      <circle cx="623" cy="709" r="3" fill="#111111"/>
+      <text x="632" y="744" text-anchor="middle" class="sans small ink" font-weight="700">Guides</text>
+      <rect x="692" y="682" width="92" height="78" rx="22" fill="#C88B6A" stroke="#111111" stroke-width="2"/>
+      <path d="M717 710 C725 702 737 702 745 710 M720 717 C727 710 735 710 742 717" class="thin"/>
+      <circle cx="731" cy="725" r="3" fill="#111111"/>
+      <text x="738" y="744" text-anchor="middle" class="sans ink" font-size="13" font-weight="700">Community</text>
+    </g>
+
+    <rect x="456" y="789" width="352" height="63" fill="#FFFFFF" stroke="#D9D4C9" stroke-width="1"/>
+    <g class="sans micro ink" text-anchor="middle">
+      <text x="500" y="831">HOME</text><text x="588" y="831">TRIPS</text><text x="676" y="831">GUIDES</text><text x="764" y="831">ME</text>
+    </g>
+    <circle cx="500" cy="806" r="5" fill="#1D4F8C"/><circle cx="588" cy="806" r="5" fill="#DCC7A1"/><circle cx="676" cy="806" r="5" fill="#7F8A6A"/><circle cx="764" cy="806" r="5" fill="#C88B6A"/>
+  </g>
+
+  <!-- Screen 3: Retreat detail -->
+  <g filter="url(#shadow)">
+    <rect x="842" y="48" width="352" height="804" rx="54" fill="#F9F2E7" stroke="#111111" stroke-width="3"/>
+  </g>
+  <g clip-path="url(#screen3)">
+    <rect x="842" y="48" width="352" height="804" fill="#F9F2E7"/>
+    <rect x="952" y="68" width="132" height="28" rx="14" fill="#111111"/>
+    <text x="866" y="86" class="sans micro ink">9:41</text>
+    <circle cx="878" cy="132" r="20" fill="#F9F2E7" stroke="#111111" stroke-width="2"/>
+    <path d="M884 132 H872 M876 126 L870 132 L876 138" class="thin"/>
+    <circle cx="1156" cy="132" r="20" fill="#F9F2E7" stroke="#111111" stroke-width="2"/>
+    <path d="M1148 132 C1152 124 1160 124 1164 132 C1168 140 1162 147 1156 151 C1150 147 1144 140 1148 132Z" fill="none" stroke="#111111" stroke-width="2"/>
+
+    <rect x="842" y="160" width="352" height="260" fill="url(#faireSky)"/>
+    <circle cx="1105" cy="222" r="46" fill="#F2D8B9" opacity="0.85"/>
+    <path d="M842 350 C904 323 972 336 1024 314 C1076 291 1131 303 1194 278 L1194 420 L842 420Z" fill="#7F8A6A"/>
+    <path d="M842 374 C912 348 964 364 1020 344 C1080 323 1130 330 1194 305" fill="none" stroke="#24483B" stroke-width="18" opacity="0.68"/>
+    <g fill="#24483B">
+      <rect x="932" y="258" width="112" height="95" rx="3"/>
+      <rect x="914" y="236" width="34" height="117"/>
+      <rect x="1028" y="225" width="36" height="128"/>
+      <path d="M914 236 L922 224 L930 236 L938 224 L948 236Z"/>
+      <path d="M1028 225 L1037 212 L1046 225 L1055 212 L1064 225Z"/>
+      <path d="M947 258 L961 242 L976 258 L991 242 L1006 258 L1020 242 L1044 258Z"/>
+      <path d="M972 353 V305 C972 284 1004 284 1004 305 V353Z" fill="#DCC7A1"/>
+    </g>
+    <path d="M1095 350 L1133 298 L1170 350Z" fill="#F9F2E7" stroke="#111111" stroke-width="2.5"/>
+    <path d="M1133 298 V350" class="thin"/>
+    <path d="M864 360 L893 319 L923 360Z" fill="#C88B6A" stroke="#111111" stroke-width="2.5"/>
+    <path d="M893 319 V360" class="thin"/>
+
+    <rect x="866" y="396" width="148" height="30" rx="15" fill="#111111"/>
+    <text x="940" y="416" text-anchor="middle" class="sans micro white">AUGUST 14–16</text>
+
+    <text x="866" y="475" class="sans label green">WEEKEND EXPERIENCE</text>
+    <text x="866" y="516" class="serif h2 ink">Renaissance Faire</text>
+    <text x="866" y="552" class="serif h2 ink">Shabbos</text>
+    <text x="866" y="585" class="sans small muted">Pennsylvania · Fri–Sun</text>
+    <text x="866" y="616" class="sans ink" font-size="14.5">An immersive Shabbos weekend built around</text>
+    <text x="866" y="637" class="sans ink" font-size="14.5">the Faire, with kosher meals and a real</text>
+    <text x="866" y="658" class="sans ink" font-size="14.5">community.</text>
+
+    <g>
+      <rect x="866" y="684" width="96" height="66" rx="18" fill="#ECE7D8"/>
+      <text x="914" y="710" text-anchor="middle" class="sans micro ink">KOSHER</text>
+      <text x="914" y="733" text-anchor="middle" class="sans small ink" font-weight="700">Meals</text>
+      <rect x="976" y="684" width="96" height="66" rx="18" fill="#DCC7A1"/>
+      <text x="1024" y="710" text-anchor="middle" class="sans micro ink">SUNDAY</text>
+      <text x="1024" y="733" text-anchor="middle" class="sans ink" font-size="14" font-weight="700">Faire ticket</text>
+      <rect x="1086" y="684" width="84" height="66" rx="18" fill="#C88B6A"/>
+      <text x="1128" y="710" text-anchor="middle" class="sans micro ink">STAY</text>
+      <text x="1128" y="733" text-anchor="middle" class="sans ink" font-size="14" font-weight="700">2 options</text>
+    </g>
+    <rect x="866" y="773" width="304" height="58" rx="29" fill="#1D4F8C"/>
+    <text x="1018" y="810" text-anchor="middle" class="sans body white" font-weight="700">View the weekend</text>
+  </g>
+
+  <!-- Screen 4: City guide -->
+  <g filter="url(#shadow)">
+    <rect x="1228" y="48" width="352" height="804" rx="54" fill="#F9F2E7" stroke="#111111" stroke-width="3"/>
+  </g>
+  <g clip-path="url(#screen4)">
+    <rect x="1228" y="48" width="352" height="804" fill="#F9F2E7"/>
+    <rect x="1338" y="68" width="132" height="28" rx="14" fill="#111111"/>
+    <text x="1252" y="86" class="sans micro ink">9:41</text>
+    <circle cx="1264" cy="132" r="20" fill="#F9F2E7" stroke="#111111" stroke-width="2"/>
+    <path d="M1270 132 H1258 M1262 126 L1256 132 L1262 138" class="thin"/>
+    <text x="1300" y="140" class="sans label ink">CITY GUIDE</text>
+    <circle cx="1542" cy="132" r="20" fill="#F9F2E7" stroke="#111111" stroke-width="2"/>
+    <circle cx="1542" cy="132" r="3" fill="#111111"/>
+    <circle cx="1534" cy="132" r="3" fill="#111111"/>
+    <circle cx="1550" cy="132" r="3" fill="#111111"/>
+
+    <rect x="1252" y="170" width="304" height="228" rx="30" fill="url(#mapWash)" stroke="#111111" stroke-width="2"/>
+    <path d="M1260 329 C1308 287 1342 306 1372 270 C1408 227 1455 255 1492 218 C1514 196 1537 196 1558 184" fill="none" stroke="#1D4F8C" stroke-width="15" opacity="0.85"/>
+    <path d="M1268 358 C1316 333 1348 346 1382 321 C1416 295 1452 310 1486 287 C1518 266 1535 269 1550 252" class="thin"/>
+    <path d="M1270 215 C1315 239 1323 273 1350 285 C1379 298 1400 276 1428 290 C1452 301 1467 330 1498 340 C1523 349 1540 340 1553 326" class="thin"/>
+    <path d="M1314 186 V382 M1371 176 V391 M1430 172 V392 M1490 174 V388" fill="none" stroke="#111111" stroke-width="1.2" opacity="0.35"/>
+    <path d="M1258 232 H1550 M1258 282 H1550 M1258 334 H1550" fill="none" stroke="#111111" stroke-width="1.2" opacity="0.35"/>
+    <g>
+      <path d="M1360 235 C1360 222 1370 212 1383 212 C1396 212 1406 222 1406 235 C1406 251 1383 271 1383 271 C1383 271 1360 251 1360 235Z" fill="#C88B6A" stroke="#111111" stroke-width="2"/>
+      <circle cx="1383" cy="235" r="5" fill="#F9F2E7"/>
+      <path d="M1460 302 C1460 289 1470 279 1483 279 C1496 279 1506 289 1506 302 C1506 318 1483 338 1483 338 C1483 338 1460 318 1460 302Z" fill="#7F8A6A" stroke="#111111" stroke-width="2"/>
+      <circle cx="1483" cy="302" r="5" fill="#F9F2E7"/>
+      <path d="M1287 300 C1287 287 1297 277 1310 277 C1323 277 1333 287 1333 300 C1333 316 1310 336 1310 336 C1310 336 1287 316 1287 300Z" fill="#1D4F8C" stroke="#111111" stroke-width="2"/>
+      <circle cx="1310" cy="300" r="5" fill="#F9F2E7"/>
+    </g>
+
+    <text x="1252" y="447" class="sans label green">NEW YORK CITY</text>
+    <text x="1252" y="486" class="serif ink" font-size="28" font-weight="700">Jewish Lower East Side</text>
+    <text x="1252" y="518" class="sans ink" font-size="14">Food, history, minyanim, and walking routes.</text>
+
+    <g>
+      <rect x="1252" y="552" width="304" height="76" rx="22" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+      <circle cx="1290" cy="590" r="22" fill="#ECE7D8"/>
+      <path d="M1281 591 H1299 M1283 585 H1297 M1286 579 H1294" class="thin"/>
+      <text x="1325" y="583" class="sans label ink">SHABBAT ESSENTIALS</text>
+      <text x="1325" y="608" class="sans ink" font-size="13">Eruv, minyanim + lighting times</text>
+
+      <rect x="1252" y="642" width="147" height="96" rx="22" fill="#DCC7A1" stroke="#111111" stroke-width="2"/>
+      <text x="1270" y="674" class="sans label ink">EAT</text>
+      <text x="1270" y="705" class="serif h3 ink">12 kosher</text>
+      <text x="1270" y="727" class="sans small ink">places saved</text>
+      <rect x="1409" y="642" width="147" height="96" rx="22" fill="#7F8A6A" stroke="#111111" stroke-width="2"/>
+      <text x="1427" y="674" class="sans label ink">WALK</text>
+      <text x="1427" y="705" class="serif h3 ink">3 routes</text>
+      <text x="1427" y="727" class="sans small ink">ready offline</text>
+    </g>
+
+    <rect x="1252" y="773" width="304" height="58" rx="29" fill="#111111"/>
+    <text x="1404" y="810" text-anchor="middle" class="sans body white" font-weight="700">Open the guide</text>
+  </g>
+</svg>
